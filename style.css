@@ -1,0 +1,136 @@
+body{
+    margin: 1%;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-size: 2.7rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+header > img{
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: auto;
+}
+nav{
+    background-color: #27877F;
+    padding: 0.1rem;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    /* border: 1px solid red; */
+    
+}
+nav li a{
+    text-decoration: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    font-size: 1.5rem;
+}
+nav li a span:hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section > div{
+    height: 250px;
+    width: 100%;
+    margin: 20px;
+
+    text-align: center;
+    color: #fff;
+
+    background-image: url("https://img.freepik.com/free-photo/gray-haired-man-working-garden-looking-concentrated_259150-58924.jpg?w=1800&t=st=1689056445~exp=1689057045~hmac=26d6eebdedf6c28102906941c96c394e3166a5beb862ea6e2550b0836d00cbfc");
+    background-attachment:fixed;
+   
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    animation: changeBorder 1s infinite ease-out;
+}
+section > div:hover{
+    filter: drop-shadow(0px 1px 6px #bfbcbc);
+}
+@keyframes changeBorder {
+    from{
+        border: 4px solid aquamarine;
+    } to{
+        border: 4px solid rgb(223, 248, 242);
+    }
+}
+
+section > div > h1{
+    animation: changeColor 1s infinite ease-out;
+}
+@keyframes changeColor {
+    from{
+        color: rgb(244, 247, 246);
+    } to{
+        color: rgb(0, 217, 144);
+    }
+}
+
+section > div > img{
+    width:100%;
+    height:100%;
+    display: block;
+    object-fit:cover;
+    border-radius: 8px;
+}
+article{
+    width: 22rem;
+    height: auto;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+article:hover{
+    filter: drop-shadow(0px 1px 6px #bfbcbc);
+}
+section > article > img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: space-evenly;
+    background-color: #27877F;
+}
+
+footer div{
+    width: 22rem;
+    height: auto;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+footer > div > img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: auto;
+}
+footer > div > a{
+    color: white;
+}
